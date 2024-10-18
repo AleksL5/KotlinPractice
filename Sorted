@@ -1,0 +1,20 @@
+fun main() {
+    val data = lsitOf("a", "a", "a", "b", "b", "c", "c", "a", "a", "a")
+    var result = mutableListOf<String>()
+	result.add(data[0])
+	var j = 0
+		for (i in 1 until data.size){
+			if (data[i] != result[j]) {
+				result.add(data[i])
+				j++
+			}
+		}
+			var sum = 0
+			var count = 0
+			for (x in 0 until result.size){
+			count = data.drop(sum).takeWhile { it == result[x] }.count()
+			result[x] = result[x] + count
+				sum += count
+			}
+	println(result.joinToString(""))
+}
