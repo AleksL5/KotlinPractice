@@ -1,0 +1,6 @@
+fun main() {
+    val message = "hello world"
+    val result = message.toLowerCase().split(" ").map { it.replaceFirstChar { it.toTitleCase() }}.joinToString(" ")
+
+    println(result)
+}
