@@ -16,5 +16,6 @@ fun main() {
 			result[x] = result[x] + count
 				sum += count
 			}
+
 	println(result.joinToString(""))
 }
