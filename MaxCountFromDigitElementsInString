@@ -1,0 +1,7 @@
+fun main() {
+	var message = "Lorem ipsum dolor sit 1234 amet, consectetur adipiscing 56789 elit."
+	val result = message.split(" ").filter { it.all { it.isDigit()}}.map { it.count() }.max()
+
+
+	println(result)
+}
