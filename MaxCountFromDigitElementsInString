@@ -5,3 +5,18 @@ fun main() {
 
 	println(result)
 }
+
+
+
+// Sum of each digit
+fun main() {
+	var message = "Lorem ipsum dolor sit 123 amet, consectetur adipiscing 456 elit."
+	val res = message.split(" ").filter { it.all { it.isDigit()}}.map { it.toList() }.flatten()
+	var result = 0
+	for (i in res){
+		result += i.toString().toInt()
+
+	}
+
+	println(result)
+}
