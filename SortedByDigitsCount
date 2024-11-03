@@ -1,0 +1,7 @@
+fun main() {
+	var message = listOf("Arrows_451", "Controller_24", "Elements_451", "Pagination_3", "Brave", "Action", "Bold")
+	val result = message.sortedBy { it.filter { it.isDigit() }.count() }.joinToString()
+
+
+	println(result)
+}
