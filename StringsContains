@@ -1,0 +1,12 @@
+fun main() {
+    val (message1, message2) = readInput()
+    var result = message1.contains(message2) || message2.contains(message1)
+
+    println(result)
+}
+
+fun readInput(): Pair<String, String> {
+    val scanner = Scanner(System.`in`)
+    val input = scanner.nextLine().trim().split(" | ")
+    return Pair(input[0], input[1])
+}
