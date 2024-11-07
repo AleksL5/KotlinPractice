@@ -1,0 +1,6 @@
+fun main() {
+    val message = "World"
+    val result = message.mapIndexed { index, c -> "$c($index)" }.joinToString(" ")
+
+    println(result)
+}
