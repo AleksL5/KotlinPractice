@@ -3,6 +3,7 @@ fun main() {
     var result = message1.contains(message2) || message2.contains(message1)
 
     println(result)
+
 }
 
 fun readInput(): Pair<String, String> {
