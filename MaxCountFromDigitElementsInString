@@ -3,6 +3,7 @@ fun main() {
 	val result = message.split(" ").filter { it.all { it.isDigit()}}.map { it.count() }.max()
 
 	println(result)
+
 }
 
 // Sum of each digit
