@@ -2,6 +2,7 @@ fun main() {
     val message = "Всегда  есть два, не  больше,   не меньше.   Мастер  и  ученик  —  Йода."
     val result = message.split(" ").filterNot { it.all { it == ' ' }}.joinToString(" ")
 
+
     println(result)
 }
 
