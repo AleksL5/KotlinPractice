@@ -1,0 +1,11 @@
+fun main() {
+    var n = readln().toInt()
+    val banknotes = listOf(100, 50, 20, 10, 5, 2, 1)
+
+    println("Вам доступно:")
+    banknotes.forEach { banknote ->
+        val count = n / banknote
+        n %= banknote
+        println("${banknote}$ - ${count}шт")
+    }
+}
