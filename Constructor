@@ -1,0 +1,17 @@
+class Monster {
+    val pawsCount: Int
+    val eyesCount: Int
+    val fangsCount: Int
+    val clawsCount: Int
+    val tentaclesCount: Int
+
+    constructor(pawsCount: Int, eyesCount: Int, fangsCount: Int, clawsCount: Int, tentaclesCount: Int) {
+    this.pawsCount = pawsCount
+    this.eyesCount = eyesCount
+    this.fangsCount = fangsCount
+    this.clawsCount = clawsCount
+    this.tentaclesCount = tentaclesCount
+    }
+    constructor(size: Int): this(size, size, size, size, size)
+    constructor(): this(Random.nextInt(1, 10))
+}
