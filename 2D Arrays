@@ -11,7 +11,7 @@ fun createList(n: Int): MutableList<MutableList<Int>> {
         }
         list.add(array)
     }
-    
+
     for (i in list){
         for (j in i){
             print(j)
