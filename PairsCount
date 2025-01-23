@@ -1,7 +1,7 @@
 fun main() {
     var message = "abAB"
     var result: String
-    
+
     result = message.windowed(2).groupBy { it }.map { "${it.key}: ${it.value.count()}" }.joinToString(", ")
     
     println(result)
