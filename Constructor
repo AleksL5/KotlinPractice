@@ -5,7 +5,6 @@ class Monster {
     val clawsCount: Int
     val tentaclesCount: Int
 
-
     constructor(pawsCount: Int, eyesCount: Int, fangsCount: Int, clawsCount: Int, tentaclesCount: Int) {
     this.pawsCount = pawsCount
     this.eyesCount = eyesCount
