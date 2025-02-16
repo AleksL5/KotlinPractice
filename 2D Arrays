@@ -2,6 +2,7 @@ val (width, height) = readInput()
     val result = Array(height) {
         Array(width) { 1 }
 
+
 fun createList(n: Int): MutableList<MutableList<Int>> {
     var list = mutableListOf<MutableList<Int>>()
     for (i in 1..n) {
